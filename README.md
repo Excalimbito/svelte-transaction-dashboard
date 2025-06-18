@@ -1,38 +1,51 @@
-# sv
+# Svelte Transaction Dashboard
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A transaction management interface built with SvelteKit, TypeScript and DaisyUI that alows users to analyze personal expenses.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Transaction Statistics
+- Transaction display with sortable columns
+- Filtering transaction by date and cathegories
+- Auto-categorization based on keywords
 
+## Tech Stack
+
+- [SvelteKit](https://kit.svelte.dev/) - Web application framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [DaisyUI](https://daisyui.com/) - UI components
+- [LayerChart](https://layerchart.com/) - Data visualization
+
+## Getting Started
+
+1. Clone the repository:
 ```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+git clone https://github.com/Excalimbito/svelte-transaction-dashboard.git
+cd svelte-transaction-dashboard
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
+2. Install dependencies:
 ```bash
-npm run dev
+npm install
+```
 
-# or start the server and open the app in a new browser tab
+3. Start the development server:
+```bash
 npm run dev -- --open
 ```
 
-## Building
+4. Navigate to the local host from your terminal.
 
-To create a production version of your app:
+## Project Structure
 
-```bash
-npm run build
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+src/
+├── lib/
+│   ├── components/    # Reusable UI components
+│   ├── data/          # Sample transaction data
+│   ├── stores/        # Svelte stores for state management
+│   ├── types/         # TypeScript type definitions
+│   └── utils/         # Helper functions
+└── routes/            # SvelteKit pages and layouts
+```
